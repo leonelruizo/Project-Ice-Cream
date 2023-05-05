@@ -1,0 +1,152 @@
+<!-- seccion header -->
+<header class="header">
+  <div class="container">
+    <div class="header-flex">
+      <a href="#" class="logo">
+        <span class="logo__circle">
+          <svg width="35" height="40">
+            <use class="logo__icon" href="./images/sprites.svg#icon-ice-cream-logo"></use>
+        </span>
+        <span class="logo__text">Icecream</span>
+      </a>
+      <nav class="navigation">
+        <ul class="navigation__list">
+          <li class="navigation-item">
+            <a href="#" class="navigation__link navigation__link--current ">Home</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation__link " href="#customer-reviews" >About us</a>
+          </li>
+          <li class="navigation-item">
+            <a  class="navigation__link " href="#about">How it’s made?</a>
+          </li>
+
+          <li class="navigation-item">
+            <a  class="navigation__link " href="#products">Our products</a>
+          </li>
+
+          <li class="navigation-item">
+            <a  class="navigation__link " href="#contacts">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <button class="button" type="button" id="menu__modal-open">Buy now</button>
+      <button class="hamburguesa hamburguesa--x" id="menu-open">
+      <span class="fa fa-bars header__button--menu" aria-hidden="true"></span>
+    </div>
+    <nav class="menu-desplegable" id="menu-desplegable">
+      <button class="hamburguesa hamburguesa--right" id="menu-close">
+      <span class="fa fa-times header__button--cross" aria-hidden="true"></span>
+      </button>
+      <button class="button  button--burguer" type="button">Buy now</button>
+        <ul class="navigation__menu">
+          <li class="navigation-item">
+            <a href="./index.html" class="navigation__link navigation__link--current">Home</a>
+          </li>
+          <li class="navigation-menu">
+            <a class="navigation__link" href="#customer-reviews" >About us</a>
+          </li>
+
+          <li class="navigation-menu">
+            <a  class="navigation__link" href="#about">How it’s made?</a>
+          </li>
+
+          <li class="navigation-menu">
+            <a  class="navigation__link" href="#products">Our products</a>
+          </li>
+
+          <li class="navigation-menu">
+            <a class="navigation__link" href="#contacts" >Contact</a>
+          </li>
+        </ul>
+      </nav>
+    <!-- seccion hero -->
+    <section class="hero">
+      <div class="container">
+        <h1 class="hero__order-title _anim-items _anim-no-hide">ice cream made with</h1>
+        <span class="hero__order-title--accent _anim-items _anim-no-hide"><span>p</span><span>a</span><span>s</span><span >s</span><span >i</span><span>o</span><span>n</span></span>
+        <div class="buttons">
+          <a href="#products" class="hero__button">Products</a>
+          <a href="#about" class="hero__button hero__button--max">How it’s made? </a>
+        </div>
+        <div class="hero__ice">
+          <picture class="hero__ice-img">
+        <source
+          srcset="
+            ./images/mobile/heroice.png    1x,
+            ./images/mobile/heroice@2x.png 2x
+          "
+          media="(max-width: 767px)"
+        />
+        <source
+          srcset="
+            ./images/desktop/heroice.png    1x,
+            ./images/desktop/heroice.png    2x
+          "
+          media="(min-width: 1200px)"
+        />
+        <source
+          srcset="
+            ./images/tablet/heroice.png    1x,
+            ./images/tablet/heroice@2x.png 2x
+          "
+          media="(min-width: 768px)"
+        />
+        <img
+          class="img"
+          src="./images/mobile/heroice.png"
+          alt="big ice cream"
+        />
+      </picture>
+        </div>
+        <div class="hero-decorate">
+          <div class="hero__text1">
+            <p class="hero__text-min--accent">16</p>
+            <p class="hero__text--min">cafes</p>
+            <p class="hero__text-min--accent">23</p>
+            <p class="hero__text--min">food trucks</p>
+          </div>
+        </div>
+        <div class="hero__position">
+          <picture class="hero__milk">
+            <img
+          srcset="
+            ./images/tablet/bio.png     124w,
+            ./images/tablet/bio@2x.png  248w,
+            ./images/desktop/bio.png    188w,
+            ./images/desktop/bio@2x.png 376w
+          "
+          sizes="(min-width: 1200px) 188px,
+               (min-width: 768px) 124px"
+          src="./images/tablet/bio.png"
+          alt="photo"
+          class="img"
+        />
+           
+          </picture>
+          <p class="hero__text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et
+          </p>
+          <a href="" class="hero__link">
+            <svg class="hero__icon-arrow">
+              <use href="./images/sprites-flechas.svg#icon-arrow-right"></use>
+            </svg>
+          </a>
+        </div>
+        <div class="hero__tasty">
+          <img class="hero__tasty-img" src="./images/desktop/tasty.png" alt="chica comiendo helado">
+        </div>
+      </div>
+      <div class="burbujas">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      </div>
+    </section>
+  </div>
+</header>

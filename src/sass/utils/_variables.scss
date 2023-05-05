@@ -1,0 +1,46 @@
+// titulos color, h2 {sub-titulo}, h3 {main}
+// Primer titulo
+$sub-title: #ffa5ba;
+// segundo titulo,y todos los colores principales en el cuerpo
+$main: #d41443;
+// color de texto de contenido para cada tarjeta y bloques de texto
+$primary: #000000;
+$secondary: #907e82;
+
+// color invertido para texto, títulos, botones, secciones
+$polar: #ffffff;
+
+// colores de fondo de encabezado y sección
+$menu-bg: #e17992;
+$menu-border: #e18298;
+$hero-bg: #ffb8ca;
+$section-bg: #fff5f6;
+
+// fondo de tarjetas de la seccion 1
+$ice-cream: #ffb8ca;
+$ice-coffee: #f0d1a5;
+$milk-shake: #c2e297;
+
+// fondo del contenido del control deslizante
+$slider: #fafafa;
+$underline: #e1e1e1;
+
+// sección 5 ubicaciones índice títulos color de fondo
+$cafe: #f0d1a5;
+$truck: #c2e297;
+$time: #ffa5ba;
+
+//botones (productos y nuestras ubicaciones), (comprar ahora, leer más, franquicia, etc.)
+// Используем #d41443 вместо #D41342, явная ошибка дизайнера
+$btn1-prod-loc: #d41443;
+$btn2-franchise: #ffffff;
+
+$btn1-hover: #c7133e;
+$btn2-hover: #ecebeb;
+
+// fondo de los iconos de pie de página
+$social: #fea5bb;
+
+$tt: 150ms;
+$tf: cubic-bezier(0.4, 0, 0.2, 1);
+

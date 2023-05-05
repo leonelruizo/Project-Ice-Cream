@@ -1,0 +1,155 @@
+.about {
+  background-image: url(../images/desktop/about/milk.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position-y: 80%;
+
+  @media screen and (min-width: 768px) {
+    min-width: 768px;
+    background-image: url('../images/desktop/about/milk.png');
+  }
+  @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+    screen and (min-resolution: 192dpi) and (min-width: 768px),
+    screen and (min-resolution: 2dppx) and (min-width: 768px) {
+    background-image: url('../images/desktop/about/milk@2x.png');
+  }
+}
+
+.about__title {
+  font-family: 'Titan One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: $sub-title;
+  transform: translate(0px, 120%);
+  opacity: 0;
+  transition: all 0.8s ease 0s;
+
+  &._active {
+    transform: translate(0px, 0px);
+    opacity: 1;
+  }
+  @media (min-width: 768px) {
+    font-size: 26px;
+    line-height: 30px;
+  }
+}
+
+.about__subtitle {
+  font-family: 'Titan One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 58px;
+  line-height: 66px;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: $main;
+  transform: translate(0px, 120%);
+  opacity: 0;
+  transition: all 0.8s ease 0.1s;
+}
+.about__subtitle._active {
+  transform: translate(0px, 0px);
+  opacity: 1;
+}
+.about-container {
+  display: flex;
+  flex-direction: column;
+  @media (min-width: 768px) {
+    flex-direction: row;
+  }
+}
+.about__description {
+  margin-bottom: 35px;
+  font-family: DM Sans;
+  color: $primary;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: left;
+  width: 220px;
+
+  transform: translate(120%, 0);
+  opacity: 0;
+  transition: all 0.8s ease 0s;
+
+  @media (min-width: 768px) {
+    width: 350px;
+    font-size: 14px;
+    line-height: 176%;
+  }
+  @media (min-width: 1200px) {
+    width: 463px;
+  }
+}
+.about__description._active {
+  transform: translate(0px, 0px);
+  opacity: 1;
+  transition: all 0.8s ease 0.4s;
+}
+
+.about__description--gray {
+  color: $secondary;
+  margin-bottom: 30px;
+  width: 220px;
+  @media (min-width: 768px) {
+    width: 350px;
+    font-size: 14px;
+    line-height: 176%;
+  }
+  @media (min-width: 1200px) {
+    width: 463px;
+  }
+}
+.about__main-text {
+  display: flex;
+  flex-direction: column;
+  margin-left: 30px;
+  justify-content: center;
+}
+.about__button--light {
+  background: $btn2-franchise;
+  border-radius: 22px;
+  width: 176px;
+  height: 44px;
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
+  color: $main;
+  cursor: pointer;
+  border: 1px solid transparent;
+
+  &:hover {
+    background-color: $btn2-franchise;
+    box-shadow: 0 4px 10px rgba(212, 20, 67, 0.2);
+    transform: scale(1.1);
+  }
+}
+.button-iconrigth {
+  width: 10px;
+  height: 10px;
+  fill: $main;
+  margin-left: 10px;
+}
+
+.about__text {
+  overflow: hidden;
+}
+.about__text._active:nth-child(1) p {
+  transition: all 0.8s ease 0.1s;
+}
+
+.about__text._active:nth-child(2) p {
+  transition: all 0.8s ease 0.3s;
+}
+
+.about__text._active:nth-child(3) p {
+  transition: all 0.8s ease 0.5s;
+}
